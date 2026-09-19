@@ -124,9 +124,16 @@ SEGMENTS = [
     ("clip", O, 0, 1305, "2026 SEPTEMBER 14",
      ["THE MOON PASSES IN FRONT OF VENUS",
       "SEEN FROM CHENNAI - IN DAYLIGHT"], "75 MINUTES, START TO FINISH"),
-    ("card", [("THEN I GOT CURIOUS", 3 * UI, WHITE), ("", 1, WHITE),
-              ("WHY DOES VENUS", 3 * UI, COOL),
-              ("HAVE PHASES AT ALL?", 3 * UI, COOL)], 3.0),
+    # "Why does Venus have phases" is not a question anybody needs answered.
+    # That a crescent Venus is *larger* than a full one is genuinely strange,
+    # and it is the thing the geometry shot actually explains.
+    ("card", [("WHY IS A CRESCENT VENUS", 3 * UI, WHITE), ("", 1, WHITE),
+              ("BIGGER THAN A FULL ONE?", 3 * UI, WARM)], 3.0),
+    # the orbital geometry: this is the answer, before the picture that proves it
+    ("clip", P, 1850, 2310, "VENUS ORBITS INSIDE US",
+     ["A THIN CRESCENT MEANS IT IS", "ON OUR SIDE OF THE SUN"],
+     "WHICH IS ALSO ITS CLOSEST"),
+    # and the measurement that settles it
     ("clip", P, 3960, 4230, "THE CRESCENT IS BIGGEST",
      ["SAME SCALE IN ALL THREE.", "IT IS NOT GROWING - IT IS CLOSER"],
      "1.71 AU  ->  0.28 AU"),
