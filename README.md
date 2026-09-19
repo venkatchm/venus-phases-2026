@@ -17,6 +17,12 @@ https://github.com/venkatchm/venus-phases-2026/raw/main/media/venus_the_whole_st
 
 <video src="https://github.com/venkatchm/venus-phases-2026/raw/main/media/venus_the_whole_story.mp4" controls width="100%"></video>
 
+There is also a **44-second vertical cut** for phones —
+[media/venus_reel.mp4](https://github.com/venkatchm/venus-phases-2026/raw/main/media/venus_reel.mp4)
+— and a 45-second [preview](https://github.com/venkatchm/venus-phases-2026/raw/main/media/venus_phases_preview.mp4)
+if you want the argument quickly. Full-quality masters are on the
+[v1.0 release](https://github.com/venkatchm/venus-phases-2026/releases/tag/v1.0).
+
 ![The phases of Venus through the 2026 apparition](media/venus_phases_sheet.png)
 
 *Eight dates from superior to inferior conjunction, every panel at the same
