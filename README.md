@@ -17,11 +17,22 @@ https://github.com/venkatchm/venus-phases-2026/raw/main/media/venus_the_whole_st
 
 <video src="https://github.com/venkatchm/venus-phases-2026/raw/main/media/venus_the_whole_story.mp4" controls width="100%"></video>
 
-There is also a **44-second vertical cut** for phones —
-[media/venus_reel.mp4](https://github.com/venkatchm/venus-phases-2026/raw/main/media/venus_reel.mp4)
-— and a 45-second [preview](https://github.com/venkatchm/venus-phases-2026/raw/main/media/venus_phases_preview.mp4)
-if you want the argument quickly. Full-quality masters are on the
-[v1.0 release](https://github.com/venkatchm/venus-phases-2026/releases/tag/v1.0).
+### The vertical cut
+
+Forty-four seconds, 1080×1920, made for a phone held upright — the whole
+argument compressed to its shortest honest form.
+
+https://github.com/venkatchm/venus-phases-2026/raw/main/media/venus_reel.mp4
+
+<video src="https://github.com/venkatchm/venus-phases-2026/raw/main/media/venus_reel.mp4" controls width="360"></video>
+
+### Everything else
+
+- [45-second preview](https://github.com/venkatchm/venus-phases-2026/raw/main/media/venus_phases_preview.mp4)
+  — the argument quickly, 960×540
+- [v1.0 release](https://github.com/venkatchm/venus-phases-2026/releases/tag/v1.0)
+  — full-quality masters: the whole film (113 MB), Part One alone (69 MB),
+  Part Two alone (44 MB)
 
 ![The phases of Venus through the 2026 apparition](media/venus_phases_sheet.png)
 
