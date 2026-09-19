@@ -68,13 +68,19 @@ def centre(canvas, y, text, scale, colour, margin=40):
 
 
 def compose(frame, headline, sub, stat):
+    """One vertical frame. With no headline the video is centred and left to
+    speak for itself -- the rendered HUD already names what is happening and
+    carries the live numbers, and covering that with a second caption would
+    just be saying the same thing twice."""
     c = np.zeros((H, W, 3), np.float32)
-    c[VID_Y:VID_Y + VID_H] = fit(frame) / 255.0
-    centre(c, 250, headline, 3 * UI, WHITE)
-    for i, line in enumerate(sub):
-        centre(c, VID_Y + VID_H + 90 + i * (GLYPH_H * 2 * UI + 22), line, 2 * UI, COOL)
-    if stat:
-        centre(c, H - 330, stat, 2 * UI, WARM)
+    y = VID_Y if headline else (H - VID_H) // 2
+    c[y:y + VID_H] = fit(frame) / 255.0
+    if headline:
+        centre(c, 250, headline, 3 * UI, WHITE)
+        for i, line in enumerate(sub):
+            centre(c, y + VID_H + 90 + i * (GLYPH_H * 2 * UI + 22), line, 2 * UI, COOL)
+        if stat:
+            centre(c, H - 330, stat, 2 * UI, WARM)
     centre(c, H - 150, "github.com/venkatchm/venus-phases-2026", UI, DIM)
     return (np.clip(c, 0, 1) * 255).astype(np.uint8)
 
@@ -110,30 +116,27 @@ def clip(folder, lo, hi, headline, sub, stat):
 P, O = args.phases_frames, args.occ_frames
 
 SEGMENTS = [
-    # Open on the payoff. A phone viewer decides in two seconds.
-    ("clip", O, 1000, 1120, "THE MOON MOVED",
-     ["VENUS COMES BACK OUT", "FROM BEHIND THE MOON"], "2026 SEPTEMBER 14"),
     ("card", [("I MISSED IT.", 4 * UI, WHITE), ("", 1, WHITE),
-              ("SO I SIMULATED IT.", 4 * UI, WARM)], 2.6),
-    ("clip", P, 1900, 2200, "WHY VENUS HAS PHASES",
-     ["VENUS ORBITS INSIDE US,", "SO WE SEE IT LIT FROM THE SIDE"],
-     "THE SUN IS THE ONLY LIGHT"),
+              ("SO I SIMULATED IT.", 4 * UI, WARM)], 3.0),
+    # The whole September animation, uncut. Its own HUD names each phase and
+    # carries the live numbers; the standing caption adds the two things the HUD
+    # does not say -- where this is, and that it happened in daylight.
+    ("clip", O, 0, 1305, "2026 SEPTEMBER 14",
+     ["THE MOON PASSES IN FRONT OF VENUS",
+      "SEEN FROM CHENNAI - IN DAYLIGHT"], "75 MINUTES, START TO FINISH"),
+    ("card", [("THEN I GOT CURIOUS", 3 * UI, WHITE), ("", 1, WHITE),
+              ("WHY DOES VENUS", 3 * UI, COOL),
+              ("HAVE PHASES AT ALL?", 3 * UI, COOL)], 3.0),
     ("clip", P, 3960, 4230, "THE CRESCENT IS BIGGEST",
      ["SAME SCALE IN ALL THREE.", "IT IS NOT GROWING - IT IS CLOSER"],
      "1.71 AU  ->  0.28 AU"),
-    ("clip", O, 500, 720, "DISAPPEARANCE",
-     ["VENUS GOES BEHIND THE", "MOON'S DARK LIMB - IN DAYLIGHT"], "12:00:30 UT"),
-    ("clip", O, 940, 1140, "REAPPEARANCE",
-     ["75 MINUTES LATER", "IT COMES BACK"], "13:15:33 UT"),
-    ("card", [("NOTHING HERE IS DRAWN", 3 * UI, WHITE),
+    ("card", [("THE PHASES ARE NOT DRAWN IN", 3 * UI, WHITE),
               ("", 1, WHITE),
-              ("EVERY POSITION SOLVED", 2 * UI, COOL),
-              ("FROM VSOP87D AT RUN TIME", 2 * UI, COOL),
+              ("THE SUN IS THE ONLY LIGHT,", 2 * UI, COOL),
+              ("SO THE LIT SIDE CAN ONLY", 2 * UI, COOL),
+              ("EVER FACE THE SUN", 2 * UI, COOL),
               ("", 1, WHITE),
-              ("74 CHECKS AGAINST", 2 * UI, DIM),
-              ("PUBLISHED VALUES", 2 * UI, DIM),
-              ("", 1, WHITE),
-              ("PYTHON + TAICHI", 2 * UI, WARM)], 4.5),
+              ("SAME REASONS AS THE REAL SKY", 2 * UI, WARM)], 4.5),
 ]
 
 import imageio.v2 as imageio                                          # noqa: E402
@@ -150,7 +153,7 @@ for seg in SEGMENTS:
     else:
         _, folder, lo, hi, head, sub, stat = seg
         frames = clip(folder, lo, hi, head, sub, stat)
-        what = head
+        what = head or "(uncut, HUD carries it)"
     c = 0
     for f in frames:
         writer.append_data(f)
