@@ -83,15 +83,32 @@ On 14 September 2026 the Moon passed in front of Venus. From Chennai it happened
 in broad daylight — Venus slid behind the Moon's dark limb and came back out 75
 minutes later. I wasn't looking.
 
-So I built a simulation to see what I'd missed. Then I got curious about
-something else: why does Venus have phases at all, and why does the thin crescent
-look bigger than the full disc?
+So I built a simulation to see what I'd missed.
 
-It isn't growing. It's closer — 1.71 AU down to 0.28.
+Then I got something wrong. Venus shows up as a crescent in this, and I assumed
+that was a shadow falling on it. It isn't. Nothing is casting a shadow on Venus.
+Not the Earth, not the Moon.
 
-The phases aren't drawn in. The Sun is the only light in the scene, so the lit
-side can only ever face the Sun. And Venus disappears because the Moon is nearer
-to us and gets in the way. Same reasons as the real sky.
+Venus is always exactly half lit. It's a ball with the Sun off to one side, so
+one half is in daylight and the other is in night — permanently, that never
+changes. What changes is how much of the lit half is turned towards us.
+
+Far side of the Sun, we're looking at its day side: full, and tiny.
+Off to one side: half lit.
+Swinging round between us and the Sun, we're looking mostly at its night side: a
+thin crescent.
+
+That day the Sun–Venus–Earth angle was 115°, so 29% of the face we could see was
+in sunlight. It would have been a crescent whether or not the Moon happened to
+pass in front of it.
+
+And the part I still find strange: the crescent is the biggest phase, not the
+smallest. The same position that turns Venus's night side towards us is the one
+that brings it closest — 1.71 AU down to 0.28.
+
+The Moon and Venus weren't actually near each other either. The Moon was 389,000
+km away. Venus was 68 million. They just happened to line up from where I was
+standing.
 
 Code and the full film in bio.
 
