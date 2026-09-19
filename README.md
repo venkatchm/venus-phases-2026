@@ -9,7 +9,13 @@ explains *why* Venus looks the way it does at all.
 
 ## Watch it
 
-**▶ [The Phases of Venus — the whole story](PASTE_YOUR_YOUTUBE_LINK_HERE)** (3:38, 1080p)
+**▶ [Watch on YouTube](https://youtu.be/bXCWeaN4b8Y)** — 3:38, 1080p, with chapters.
+
+Or play it right here:
+
+https://github.com/venkatchm/venus-phases-2026/raw/main/media/venus_the_whole_story.mp4
+
+<video src="https://github.com/venkatchm/venus-phases-2026/raw/main/media/venus_the_whole_story.mp4" controls width="100%"></video>
 
 ![The phases of Venus through the 2026 apparition](media/venus_phases_sheet.png)
 
