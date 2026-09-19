@@ -1,6 +1,6 @@
 # What you are watching
 
-**`venus_the_whole_story.mp4` (3:25) is the single film** — it is the two parts
+**`venus_the_whole_story.mp4` (3:38) is the single film** — it is the two parts
 below joined with title cards:
 
 | At | |
@@ -9,8 +9,8 @@ below joined with title cards:
 | 0:06 | PART ONE card |
 | 0:11 | **Part One** — why Venus shows phases (2:30) |
 | 2:41 | PART TWO card |
-| 2:47 | **Part Two** — the occultation (30 s) |
-| 3:17 | closing card: solved beats against published values |
+| 2:47 | **Part Two** — the occultation (43 s) |
+| 3:30 | closing card: solved beats against published values |
 
 ## `venus_phases.mp4` — 2:30
 
@@ -42,15 +42,18 @@ passes outside the fitted range of Hilton's photometric law.
 because it is nearer. That is only meaningful if the scale is trustworthy, which
 is why the second half never changes its angular scale and says so on screen.
 
-## `september2026.mp4` — 30 s
+## `september2026.mp4` — 43 s
 
 The companion: the Moon passing in front of Venus on 2026 September 14, seen
 from Chennai. The clock is deliberately non-linear — the encounter spans hours
 but the contacts last seconds, so each segment carries its own easing.
 
-`THE DAY OF` → `CLOSING IN` (decelerating into first contact, zooming 11°→1.5°)
-→ `DISAPPEARANCE` (near real time) → `HIDDEN BEHIND THE MOON` → `REAPPEARANCE`
-→ `THE MOON PULLS AWAY`.
+`NIGHT BY NIGHT` (three evenings of approach) → `THE DAY OF` → `CLOSING IN`
+(decelerating into first contact, zooming 11°→1.5°) → `DISAPPEARANCE` →
+`HIDDEN BEHIND THE MOON` → `REAPPEARANCE` → `THE MOON PULLS AWAY`.
+
+The two contacts get nine seconds each, near real speed at a 0.3° field, because
+they are the event. Everything else is approach and departure.
 
 The occultation is not scripted. Venus disappears because the Moon's sphere is
 nearer to the observer than Venus' sphere and gets in the way — the same reason

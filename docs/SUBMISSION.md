@@ -4,12 +4,12 @@ A physically-grounded visualisation, in Python + [Taichi](https://www.taichi-lan
 of why Venus shows phases, why it never strays far from the Sun, and why the thin
 crescent looks *bigger* than the full disc.
 
-**Start here: `media/venus_the_whole_story.mp4`** — 1920×1080, 3:25. One file,
+**Start here: `media/venus_the_whole_story.mp4`** — 1920×1080, 3:38. One file,
 the whole thing, with title cards: why Venus shows phases, then the night the
 Moon passed in front of it. This is the version to watch or upload.
 
 The parts are also there separately if you want them: `venus_phases.mp4` (2:30),
-`september2026.mp4` (30 s), `venus_phases_preview.mp4` (45 s, small), and
+`september2026.mp4` (43 s), `venus_phases_preview.mp4` (45 s, small), and
 `venus_phases_sheet.png`, which puts the whole apparition on one page.
 
 ---
