@@ -1,0 +1,7 @@
+taichi>=1.7,<2
+numpy>=1.26
+
+# Only needed by scripts/render_animation.py, which encodes an MP4.
+# imageio-ffmpeg ships its own ffmpeg binary, so nothing system-wide is required.
+imageio>=2.34
+imageio-ffmpeg>=0.5
