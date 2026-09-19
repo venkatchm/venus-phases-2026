@@ -144,6 +144,11 @@ Interactive controls: `1` `2` `3` switch between the sky, the orbital geometry
 and the visibility footprint; `T` steps through the key moments; `A` removes the
 atmosphere; `N`/`P` change observing site.
 
+**[docs/PHASES-NOT-SHADOWS.md](docs/PHASES-NOT-SHADOWS.md)** — why Venus' phases
+are not caused by the Earth's shadow, the Moon's shadow, or any shadow at all,
+and how the code settles it. The most common misconception in astronomy, and the
+thing this whole project is built on getting right.
+
 See [docs/REPRODUCE.md](docs/REPRODUCE.md) for how every file was made and
 [docs/WATCHING.md](docs/WATCHING.md) for a shot-by-shot guide to the film.
 
