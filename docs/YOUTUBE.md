@@ -80,20 +80,20 @@ CHAPTERS
 I missed it.
 
 On 14 September 2026 the Moon passed in front of Venus. From Chennai it happened
-in broad daylight - Venus slid behind the Moon's dark limb and came back out 75
-minutes later. I was not looking.
+in broad daylight — Venus slid behind the Moon's dark limb and came back out 75
+minutes later. I wasn't looking.
 
-So I wrote a simulation that puts it back, and then kept going: why Venus shows
-phases, why it never strays far from the Sun, and why the thin crescent looks
-biggest of all. (It is not growing. It is closer - 1.71 AU down to 0.28.)
+So I built a simulation to see what I'd missed. Then I got curious about
+something else: why does Venus have phases at all, and why does the thin crescent
+look bigger than the full disc?
 
-Nothing in it is drawn by hand. No textures, no planet maps, no ephemeris files.
-Every position is computed at run time from VSOP87D and ELP-2000/82, and the
-phase of Venus is an output of the ray trace rather than an input - each body's
-light direction comes from its own position, so the lit side cannot point
-anywhere except at the Sun.
+It isn't growing. It's closer — 1.71 AU down to 0.28.
 
-74 automated checks against published values. Full film and code in bio.
+The phases aren't drawn in. The Sun is the only light in the scene, so the lit
+side can only ever face the Sun. And Venus disappears because the Moon is nearer
+to us and gets in the way. Same reasons as the real sky.
+
+Code and the full film in bio.
 
 #astronomy #venus #space #python #simulation #astrophotography #science
 #solarsystem #moon #occultation #creativecoding #dataviz
